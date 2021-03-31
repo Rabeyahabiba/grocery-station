@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import header from '../../images/Bg.png';
 import './Header.css';
 const Header = () => {
     return (
         
-        <div>
-         <nav className="nav">
+        <div style={{ backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${header})` }} className="header">
+         <nav  className="nav" >
                 <ul>
                 <li>
-                       <h1 style = {{ height: `50px`}}> Grocery-Station</h1>
+                     <h1> Grocery-Station</h1>
                  </li>
                     <li>
                         <Link to="/home">Home</Link>
@@ -24,6 +25,9 @@ const Header = () => {
                     </li>
                     <li>
                         <Link to="/login">Login</Link>
+                    </li>
+                    <li>
+                        <Link to="/checkout">Checkout</Link>
                     </li>
                     {/* <li>
                        

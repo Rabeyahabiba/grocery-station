@@ -11,17 +11,18 @@ import Admin from './components/Admin/Admin';
 import Deals from './components/Deals/Deals';
 import Login from './components/Login/Login';
 import Header from './components/Header/Header';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import { createContext } from 'react';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Checkout from './components/Checkout/Checkout';
 export const UserContext = createContext();
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
     
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-       <p>Name: {loggedInUser.name}</p>
+       {/* <p>Name: {loggedInUser.name}</p> */}
 <Router>
 
      <Header/>
@@ -42,7 +43,9 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-         
+          <PrivateRoute path="/checkout">
+            <Checkout />
+          </PrivateRoute>
           <Route exact path="/">
             <Home />
           </Route>
