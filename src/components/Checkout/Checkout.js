@@ -13,7 +13,7 @@ const Checkout = () => {
     const [order, setOrders] = useState([]);
     console.log(order)
     useEffect(() => {
-        fetch('http://localhost:5555/products')
+        fetch('https://powerful-ravine-38725.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])

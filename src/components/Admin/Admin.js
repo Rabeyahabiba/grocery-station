@@ -14,7 +14,7 @@ const Admin = () => {
           weight: data.weight,
           imageURL: imageURL
       };
-      const url = `http://localhost:5555/addProduct`;
+      const url = `https://powerful-ravine-38725.herokuapp.com/addProduct`;
     // console.log(eventData)
     fetch(url,{
         method: 'POST',
