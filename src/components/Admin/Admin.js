@@ -1,13 +1,17 @@
+import { Link } from '@material-ui/core';
 import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
 import { useForm } from "react-hook-form";
+
 const Admin = () => {
-    const { register, handleSubmit, watch, errors } = useForm();
+    const { register, handleSubmit } = useForm();
     const [imageURL, setImageURL] = useState(null);
   const onSubmit = data =>{
       const eventData = {
           name: data.name,
+          price: data.price,
+          weight: data.weight,
           imageURL: imageURL
       };
       const url = `http://localhost:5555/addProduct`;
@@ -38,12 +42,35 @@ const Admin = () => {
         console.log(error);
       });
   }
-    return (
+    return (    
         <div>
+<nav  className="nav" >
+                <ul>
+                
+                    <li>
+                        <Link to="/manageProduct">Manage Product</Link>
+                    </li>
+                    <li>
+                        <Link to="/addProduct">Add Product</Link>
+                        </li>
+                    
+                  
+                   
+                </ul>
+            </nav>
+          
             <h1> Add Product </h1>
             <form onSubmit={handleSubmit(onSubmit)}>
-      <input name="name" defaultValue=" Product Name" ref={register} />   
-      <br/>  
+              <h4> Product Name</h4>
+      <input name="name" defaultValue="Product Name" ref={register} />   
+      <br/>
+      <h4> Price </h4>
+      <input name="price" defaultValue="Enter Price" ref={register} />
+      <br/>
+      <h4> Weight </h4>
+      <input name="weight" defaultValue="Weight" ref={register}/>
+      <br/> 
+      <h4> Add Photo </h4> 
       <input name="exampleRequired" type="file" onChange={handleImageUpload}/>
      
       <br/>

@@ -1,13 +1,16 @@
 import React from 'react';
 import { useContext } from 'react';
+import { useParams } from 'react-router';
 import { UserContext } from '../../App';
 
 const Orders = () => {
+    
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
         
         <div style={{textAlign: 'center'}}>
             <h1>Ordered By {loggedInUser.name} </h1>
+            
            
         </div>
     );

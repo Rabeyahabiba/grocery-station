@@ -8,9 +8,9 @@ const Header = () => {
         <div style={{ backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${header})` }} className="header">
          <nav  className="nav" >
                 <ul>
-                <li>
+                
                      <h1> Grocery-Station</h1>
-                 </li>
+                
                     <li>
                         <Link to="/home">Home</Link>
                     </li>
