@@ -33,15 +33,16 @@ function App() {
            <Route path="/home">
              <Home/>
            </Route>
-          <PrivateRoute path="/orders/:productType">
+          <PrivateRoute path="/orders/:_id">
             <Orders />
+          
           </PrivateRoute>
-          <Route path="/admin">
+          <PrivateRoute path="/admin">
             <Admin />
-          </Route>
-          <Route path="/deals">
+          </PrivateRoute>
+          <PrivateRoute path="/deals">
             <Deals />
-          </Route>
+          </PrivateRoute>
           <Route path="/login">
             <Login />
             </Route>
@@ -51,7 +52,7 @@ function App() {
           <Route path="/manageProduct">
             <ManageProduct />
           </Route>
-          <PrivateRoute path="/checkout">
+          <PrivateRoute path="/checkout/:_id">
             <Checkout />
           </PrivateRoute>
           <Route exact path="/">

@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
 
 const Deals = () => {
+    
     return (
         <div>
+            
             <h1> Make Deals </h1>
         </div>
     );

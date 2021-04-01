@@ -45,8 +45,7 @@ const Admin = () => {
     return (    
         <div>
 <nav  className="nav" >
-                <ul>
-                
+                <ul>               
                     <li>
                         <Link to="/manageProduct">Manage Product</Link>
                     </li>
@@ -76,6 +75,7 @@ const Admin = () => {
       <br/>
       
       <input type="submit" />
+      
     </form>
         </div>
     );

@@ -4,36 +4,33 @@ import header from '../../images/Bg.png';
 import './Header.css';
 const Header = () => {
     return (
-        
+
         <div style={{ backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${header})` }} className="header">
-         <nav  className="nav" >
+            <nav className="nav" >
                 <ul>
-                
-                     <h1> Grocery-Station</h1>
-                
+                    <h1> Grocery-Station</h1>
                     <li>
                         <Link to="/home">Home</Link>
                     </li>
                     <li>
                         <Link to="/orders">Orders</Link>
+                    </li>
+                    {/* <li>
+                        <Link to="/order">Order</Link>
+                    </li> */}
                         <li>
-                        <Link to="/admin">Admin</Link>
-                    </li>
-                    <li>
-                        <Link to="/deals">Deals</Link>
-                    </li>
-                    </li>
+                            <Link to="/admin">Admin</Link>
+                        </li>
+                        <li>
+                            <Link to="/deals">Deals</Link>
+                        </li>
+                    
                     <li>
                         <Link to="/login">Login</Link>
                     </li>
-                    <li>
-                        <Link to="/checkout">Checkout</Link>
-                    </li>
                     {/* <li>
-                       
-                        <Link className="btn-book" to="/login">Order</Link>
+                        <Link to="/checkout">Checkout</Link>
                     </li> */}
-                   
                 </ul>
             </nav>
         </div>
