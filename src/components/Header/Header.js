@@ -20,6 +20,7 @@ const Header = () => {
                     </li> */}
                         <li>
                             <Link to="/admin">Admin</Link>
+                          
                         </li>
                         <li>
                             <Link to="/deals">Deals</Link>
@@ -28,9 +29,9 @@ const Header = () => {
                     <li>
                         <Link to="/login">Login</Link>
                     </li>
-                    {/* <li>
-                        <Link to="/checkout">Checkout</Link>
-                    </li> */}
+                    <li>
+                        <Link to="/manageProduct">Manage Product</Link>
+                    </li>
                 </ul>
             </nav>
         </div>
