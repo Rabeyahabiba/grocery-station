@@ -4,7 +4,8 @@ Site link:(https://grocery-station.web.app/).
 
 ## Features :
 - Ordering items will lead a user to checkout page for login
-- User login authentication system is built for google, facebook
+- User login authentication system is built for google,facebook
+- Placing contact information will lead user to confirmation of order
 
 ## Front-end Thechnology :
   - React.js
