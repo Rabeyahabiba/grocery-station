@@ -1,6 +1,6 @@
 ### Grocery-Station is a full-stack online-based customer-friendly grocery shop project.
 
-Site link:(https://archies-67c87.web.app/).
+Site link:(https://grocery-station.web.app/).
 
 ## Features :
 - Ordering items will lead a user to checkout page for login
